@@ -1,0 +1,93 @@
+{
+  "config": {
+    "seed": 42,
+    "n_train": 5000,
+    "n_val": 500,
+    "n_test": 500,
+    "n_layer": 3,
+    "n_head": 4,
+    "n_embd": 128,
+    "block_size": 24,
+    "dropout": 0.0,
+    "sft_epochs": 10,
+    "sft_batch": 64,
+    "sft_lr": 0.003,
+    "sft_weight_decay": 0.01,
+    "grpo_steps": 200,
+    "grpo_batch_prompts": 8,
+    "grpo_group": 8,
+    "grpo_lr": 3e-05,
+    "grpo_beta": 0.005,
+    "grpo_clip": 0.2,
+    "max_new_tokens": 6,
+    "temperature": 1.5
+  },
+  "params": 600576,
+  "sft": {
+    "epochs": 10,
+    "steps": 790,
+    "train_samples": 50000,
+    "train_time_sec": 49.09267819998786,
+    "best_val_acc": 0.79,
+    "params": 600576,
+    "test_acc": 0.808,
+    "test_len": 2.462,
+    "ci95": 0.03452449732001901
+  },
+  "grpo": {
+    "steps": 200,
+    "prompts_seen": 1600,
+    "generations": 12800,
+    "generated_tokens": 32093,
+    "train_tokens": 178560,
+    "train_time_sec": 168.74026370001957,
+    "best_val_acc": 0.8,
+    "params": 600576,
+    "test_acc": 0.796,
+    "test_len": 2.458,
+    "ci95": 0.03532178858438513
+  },
+  "test": {
+    "n": 500,
+    "sft_acc": 0.808,
+    "grpo_acc": 0.796,
+    "delta_pp": -1.200000000000001,
+    "mcnemar_b_sft_only": 8,
+    "mcnemar_c_grpo_only": 2,
+    "mcnemar_chi2": 2.5,
+    "mcnemar_p": 0.11384629800665803
+  },
+  "by_carry": {
+    "SFT": {
+      "有进位": {
+        "n": 232,
+        "acc": 0.8103448275862069
+      },
+      "无进位": {
+        "n": 268,
+        "acc": 0.8059701492537313
+      }
+    },
+    "GRPO": {
+      "有进位": {
+        "n": 232,
+        "acc": 0.8017241379310345
+      },
+      "无进位": {
+        "n": 268,
+        "acc": 0.7910447761194029
+      }
+    }
+  },
+  "compute": {
+    "sft_time_sec": 49.09267819998786,
+    "grpo_time_sec": 168.74026370001957,
+    "time_ratio": 3.437177800987466,
+    "sft_steps": 790,
+    "grpo_steps": 200,
+    "sft_samples": 50000,
+    "grpo_generations": 12800,
+    "grpo_generated_tokens": 32093,
+    "grpo_train_tokens": 178560
+  }
+}

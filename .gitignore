@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pylibs/
+.DS_Store
+Thumbs.db
+*.log
+experiment/results_quick/
+experiment/results_*/
+!experiment/results/
