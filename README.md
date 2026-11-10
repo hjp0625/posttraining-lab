@@ -1,9 +1,13 @@
 # 从 InstructGPT 到推理模型与智能体：后训练综述与 SFT/GRPO 小实验
 
-本仓库包含两部分可复现材料：
+本仓库包含三部分可复现材料：
 
-1. **综述报告**：`survey/`，6 页中文综述《从 InstructGPT 到推理模型与智能体：大语言模型后训练方法的技术演进（2022—2026）》，含技术演进图与方法比较表。
-2. **小规模对照实验**：`experiment/`，在同一可验证算术任务上比较 **SFT** 与 **GRPO**，记录训练损失、任务准确率、输出长度与计算开销，并给出实验报告。
+1. **合并报告（Markdown）**：`REPORT.md`，把技术综述、算法代码细节与 SFT/GRPO 实验报告合并为一份可直接阅读的 Markdown 文档。
+2. **综述报告**：`survey/`，6 页中文综述《从 InstructGPT 到推理模型与智能体：大语言模型后训练方法的技术演进（2022—2026）》，含技术演进图与方法比较表。
+3. **小规模对照实验**：`experiment/`，在同一可验证算术任务上比较 **SFT** 与 **GRPO**，记录训练损失、任务准确率、输出长度与计算开销，并给出实验报告。
+
+> 直接阅读合并版：[`REPORT.md`](REPORT.md)
+
 
 ## 实验结果速览
 
@@ -24,10 +28,15 @@
 
 ```text
 .
+├── REPORT.md                    # 合并版 Markdown 报告
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
 ├── survey/
+│   ├── README.md
+│   ├── post_training_survey_2022_2026.docx
+│   ├── post_training_survey_2022_2026.pdf
+│   ├── fig1_post_training_evolution.png
 │   ├── 后训练技术演进综述_2022-2026.docx
 │   ├── 后训练技术演进综述_2022-2026.pdf
 │   └── 图1_2022-2026后训练技术演进.png
